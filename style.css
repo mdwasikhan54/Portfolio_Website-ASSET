@@ -1,0 +1,95 @@
+/* style.css */
+
+/* 1. Sticky Footer & Layout Fix */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* পুরো হাইট নিবে */
+    padding-top: 80px; /* ফিক্সড ন্যাভবারের জন্য জায়গা */
+}
+
+main {
+    flex: 1; /* কন্টেন্ট এরিয়াকে টেনে লম্বা করবে যাতে ফুটার নিচে যায় */
+}
+
+/* 2. Navbar Styling (Glassmorphism) */
+.navbar-glass {
+    background: rgba(255, 255, 255, 0.85); /* একটু বেশি সাদা যাতে বাটন দেখা যায় */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #0d6efd !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #444 !important;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 16px !important;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #0d6efd;
+    color: white !important;
+}
+
+/* 3. Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/post-header.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* 4. Common Utilities */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* 5. Responsive Fixes for 320px */
+.img-responsive-custom {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* বড় স্ক্রিনে ৩০০ এর বেশি হবে না */
+}
