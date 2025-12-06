@@ -3,109 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>About - Wasi Khan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-glass navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Wasi Khan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            <a class="navbar-brand" href="home.html">Wasi Khan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-link" href="home.html">Home</a></li>
+                    <li><a class="nav-link active" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="contact_me.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
-        <header class="page-header">
+    <section class="py-5 text-center text-white" style="background: linear-gradient(135deg,#111827,#0f172a);">
+        <div class="container pt-5">
             <h1 class="display-4 fw-bold">About Me</h1>
-        </header>
+            <p class="lead fs-5 mt-3">Full Stack Developer • Problem Solver • Creator</p>
+        </div>
+    </section>
 
-        <section class="py-5 container">
-            <div class="row align-items-center g-4">
-                <div class="col-md-5 text-center">
-                    <img src="https://mdwasikhan-portfolio.netlify.app/Image/profile.jpg" class="img-fluid rounded-circle shadow border border-5 border-white img-responsive-custom" alt="Wasi Khan">
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4 text-center">
+                    <img src="images/profile.jpg" 
+                         alt="Wasi Khan" 
+                         class="img-fluid rounded-circle border border-5 border-primary shadow-lg"
+                         style="max-width: 320px;">
                 </div>
-                <div class="col-md-7">
-                    <h2 class="fw-bold mb-3">Hello, I'm Wasi Khan</h2>
-                    <h5 class="text-primary mb-3">Full Stack Developer</h5>
-                    <p class="text-secondary lh-lg text-justify">
-                        I am a passionate developer with a strong background in building dynamic web applications. 
-                        I specialize in JavaScript technologies like React, Node.js, and Express. 
-                        My mission is to create awareness, inspire patriotism, and build a bridge between history and the modern world through technology.
-                    </p>
-                    <a href="#" class="btn btn-primary rounded-pill px-4">Download CV</a>
+
+                <div class="col-lg-8 text-white">
+                    <h2 class="fw-bold mb-3">Hello! I'm Wasi Khan</h2>
+                    <p class="lead text-muted mb-4">Full Stack Web Developer</p>
+                    <p class="mb-3">I build modern, fast, and scalable web applications using React, Next.js, Node.js, MongoDB, and Tailwind.</p>
+                    <p class="mb-3">5+ years of experience delivering clean code and pixel-perfect designs for startups and businesses.</p>
+                    <p class="mb-5">When not coding, I mentor developers and explore new tech.</p>
+
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="Wasi_Khan_Resume.pdf" 
+                           download="Wasi_Khan_Resume.pdf"
+                           class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill shadow-lg">
+                            <i class="bi bi-download me-2"></i>Download CV
+                        </a>
+                        <a href="contact-me.html" 
+                           class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-lg">
+                            <i class="bi bi-envelope me-2"></i>Hire Me
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-5 bg-light">
-            <div class="container text-center">
-                <h2 class="section-title mb-5">Existing Clients</h2>
-                <div class="row g-4 justify-content-center align-items-center">
-                    <div class="col-6 col-md-2"><div class="p-3"><i class="bi bi-google display-4 text-muted"></i><p class="mt-2 fw-bold">Google</p></div></div>
-                    <div class="col-6 col-md-2"><div class="p-3"><i class="bi bi-microsoft display-4 text-muted"></i><p class="mt-2 fw-bold">Microsoft</p></div></div>
-                    <div class="col-6 col-md-2"><div class="p-3"><i class="bi bi-apple display-4 text-muted"></i><p class="mt-2 fw-bold">Apple</p></div></div>
-                    <div class="col-6 col-md-2"><div class="p-3"><i class="bi bi-spotify display-4 text-muted"></i><p class="mt-2 fw-bold">Spotify</p></div></div>
-                    <div class="col-6 col-md-2"><div class="p-3"><i class="bi bi-slack display-4 text-muted"></i><p class="mt-2 fw-bold">Slack</p></div></div>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Client Feedback</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div id="feedbackCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="rounded-circle">
+                                    <p class="fs-5 fst-italic">"Wasi delivered an outstanding developer. Professional and fast!"</p>
+                                    <h6 class="text-">John Doe - CEO, TechStart</h6>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="rounded-circle">
+                                    <p class="fs-5 fst-italic">"Amazing work! Highly recommend for any web project."</p>
+                                    <h6 class="text-">Sarah Smith - Founder</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-5 container">
-            <h2 class="section-title text-center mb-5">My Skills</h2>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-white">Skills</h2>
             <div class="row g-4">
-                <div class="col-md-6">
-                    <h4 class="mb-4 text-primary"><i class="bi bi-code-square me-2"></i>Technical Skills</h4>
-                    <div class="mb-3">
-                        <div class="d-flex justify-content-between"><label>HTML & CSS</label><span>95%</span></div>
-                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-primary" style="width: 95%"></div></div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="d-flex justify-content-between"><label>JavaScript (ES6+)</label><span>90%</span></div>
-                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-success" style="width: 90%"></div></div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="d-flex justify-content-between"><label>React.js</label><span>85%</span></div>
-                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-info" style="width: 85%"></div></div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="d-flex justify-content-between"><label>Node.js & Express</label><span>80%</span></div>
-                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-warning" style="width: 80%"></div></div>
-                    </div>
-                     <div class="mb-3">
-                        <div class="d-flex justify-content-between"><label>MongoDB & SQL</label><span>75%</span></div>
-                        <div class="progress" style="height: 10px;"><div class="progress-bar bg-danger" style="width: 75%"></div></div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="bi bi-file-code fs-1 text-primary mb-3"></i>
+                        <h5 class="text-white">Frontend</h5>
+                        <p class="text-muted small">React • Next.js • Tailwind • TypeScript</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h4 class="mb-4 text-primary"><i class="bi bi-person-gear me-2"></i>Professional Skills</h4>
-                    <div class="row g-3">
-                        <div class="col-6"><div class="card p-3 border-0 shadow-sm hover-card text-center h-100"><i class="bi bi-people fs-1 text-primary mb-2"></i><h6>Teamwork</h6></div></div>
-                        <div class="col-6"><div class="card p-3 border-0 shadow-sm hover-card text-center h-100"><i class="bi bi-chat-dots fs-1 text-success mb-2"></i><h6>Communication</h6></div></div>
-                        <div class="col-6"><div class="card p-3 border-0 shadow-sm hover-card text-center h-100"><i class="bi bi-stopwatch fs-1 text-warning mb-2"></i><h6>Time Mgmt</h6></div></div>
-                        <div class="col-6"><div class="card p-3 border-0 shadow-sm hover-card text-center h-100"><i class="bi bi-lightbulb fs-1 text-danger mb-2"></i><h6>Creativity</h6></div></div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="bi bi-braces fs-1 text-primary mb-3"></i>
+                        <h5 class="text-white">Backend</h5>
+                        <p class="text-muted small">Node.js • Express • NestJS • APIs</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="bi bi-database fs-1 text-primary mb-3"></i>
+                        <h5 class="text-white">Database</h5>
+                        <p class="text-muted small">MongoDB • PostgreSQL • Firebase</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="bi bi-tools fs-1 text-primary mb-3"></i>
+                        <h5 class="text-white">Tools</h5>
+                        <p class="text-muted small">Git • Docker • CI/CD • Figma</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-4 mt-auto">
-        <p class="mb-0">Copyright © <span id="live-time"></span> - Wasi Khan</p>
+    <footer class="py-3 text-center text-muted border-top border-secondary">
+        <p class="mb-0">© <span id="year"></span> Wasi Khan. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

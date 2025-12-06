@@ -4,127 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Wasi Khan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="pt-5">
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-glass navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Wasi Khan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <a class="navbar-brand" href="home.html">Wasi Khan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li><a class="nav-link" href="contact_me.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
-        <header class="page-header">
+    <section class="py-5 text-center text-white" style="background: linear-gradient(135deg, #111827, #0f172a);">
+        <div class="container pt-5">
             <h1 class="display-4 fw-bold">My Services</h1>
-        </header>
+            <p class="lead fs-5 mt-3">High-quality web solutions tailored for your success</p>
+        </div>
+    </section>
 
-        <section class="py-5 container">
-            <div class="row g-4">
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white text-center mb-5">What I Offer</h2>
+            <div class="row g-4 g-lg-5">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow hover-card p-4 text-center">
-                        <i class="bi bi-palette display-4 text-primary mb-3"></i>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="icon-box mb-4">
+                            <i class="bi bi-palette fs-1 text-primary"></i>
+                        </div>
                         <h4 class="fw-bold">Web Design</h4>
-                        <p class="text-secondary">Creating visually stunning, user-friendly layouts.</p>
+                        <p class="text-muted">Modern, responsive & pixel-perfect UI/UX using Figma, Tailwind, Bootstrap</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow hover-card p-4 text-center">
-                        <i class="bi bi-code-slash display-4 text-success mb-3"></i>
-                        <h4 class="fw-bold">Web Development</h4>
-                        <p class="text-secondary">Building robust websites using React.js.</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="icon-box mb-4">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Frontend Development</h4>
+                        <p class="text-muted">React.js, Next.js, TypeScript, Tailwind, GSAP animations</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow hover-card p-4 text-center">
-                        <i class="bi bi-server display-4 text-warning mb-3"></i>
-                        <h4 class="fw-bold">Backend Dev</h4>
-                        <p class="text-secondary">Secure APIs with Node.js & Express.</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="icon-box mb-4">
+                            <i class="bi bi-server fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Backend Development</h4>
+                        <p class="text-muted">Node.js, Express, NestJS, REST & GraphQL APIs, Authentication</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow hover-card p-4 text-center">
-                        <i class="bi bi-phone display-4 text-danger mb-3"></i>
-                        <h4 class="fw-bold">App Development</h4>
-                        <p class="text-secondary">Cross-platform apps using React Native.</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="icon-box mb-4">
+                            <i class="bi bi-database fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Database Design</h4>
+                        <p class="text-muted">MongoDB, PostgreSQL, Firebase, Redis – optimized & secure</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow hover-card p-4 text-center">
-                        <i class="bi bi-graph-up-arrow display-4 text-info mb-3"></i>
-                        <h4 class="fw-bold">Digital Marketing</h4>
-                        <p class="text-secondary">SEO optimization strategies.</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="icon-box mb-4">
+                            <i class="bi bi-cloud-arrow-up fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Deployment & DevOps</h4>
+                        <p class="text-muted">Vercel, Netlify, AWS, Docker, CI/CD pipelines</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow hover-card p-4 text-center">
-                        <i class="bi bi-pen display-4 text-secondary mb-3"></i>
-                        <h4 class="fw-bold">Graphic Design</h4>
-                        <p class="text-secondary">Logos, banners, and branding.</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="icon-box mb-4">
+                            <i class="bi bi-phone fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Mobile App (PWA)</h4>
+                        <p class="text-muted">Progressive Web Apps that work like native apps</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-5 bg-white">
-             <div class="container text-center">
-                <h2 class="section-title mb-5">Our Clients</h2>
-                <div class="row g-4 justify-content-center align-items-center">
-                    <div class="col-4 col-md-2"><i class="bi bi-google display-4 text-muted"></i></div>
-                    <div class="col-4 col-md-2"><i class="bi bi-microsoft display-4 text-muted"></i></div>
-                    <div class="col-4 col-md-2"><i class="bi bi-apple display-4 text-muted"></i></div>
-                    <div class="col-4 col-md-2"><i class="bi bi-spotify display-4 text-muted"></i></div>
-                    <div class="col-4 col-md-2"><i class="bi bi-slack display-4 text-muted"></i></div>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Client Testimonials</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="testimonialCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card p-5">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-4" width="80" alt="Client">
+                                    <p class="fs-5 fst-italic text-muted">"Wasi is a top-tier developer. Delivered my project faster than expected with perfect code quality!"</p>
+                                    <h6 class="fw-bold text-primary">John Doe</h6>
+                                    <small>CEO, TechVision</small>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card p-5">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-4" width="80" alt="Client">
+                                    <p class="fs-5 fst-italic text-muted">"Amazing experience! Professional, communicative, and delivered a beautiful website."</p>
+                                    <h6 class="fw-bold text-primary">Sarah Smith</h6>
+                                    <small>Founder, Creative Studio</small>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card p-5">
+                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" class="rounded-circle mb-4" width="80" alt="Client">
+                                    <p class="fs-5 fst-italic text-muted">"Best decision hiring Wasi. My e-commerce site now loads in under 1 second!"</p>
+                                    <h6 class="fw-bold text-primary">Michael Chen</h6>
+                                    <small>Owner, ShopFast</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-5 bg-light">
-            <div class="container">
-                <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="accordion shadow" id="faqAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What is your pricing model?</button></h2>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">I offer project-based pricing and hourly rates depending on the complexity of the work.</div></div>
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item bg-card border border-secondary rounded mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-white" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                                    How long does it take to build a website?
+                                </button>
+                            </h2>
+                            <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Simple landing pages: 3–7 days<br>
+                                    Business websites: 2–4 weeks<br>
+                                    Complex web apps (e-commerce, dashboard): 4–10 weeks
+                                </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Do you provide maintenance?</button></h2>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes, I offer ongoing support and maintenance packages.</div></div>
+                        </div>
+
+                        <div class="accordion-item bg-card border border-secondary rounded mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-white" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                                    Do you provide maintenance after launch?
+                                </button>
+                            </h2>
+                            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes! I offer 3 months free maintenance + optional monthly plans for updates, security, and performance.
+                                </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">How long does a project take?</button></h2>
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">A standard portfolio takes 3-5 days, while complex sites may take 4-6 weeks.</div></div>
+                        </div>
+
+                        <div class="accordion-item bg-card border border-secondary rounded mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-white" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                                    Can you redesign an existing website?
+                                </button>
+                            </h2>
+                            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Absolutely. I specialize in modernizing old websites with better design, speed, SEO, and mobile responsiveness.
+                                </div>
                             </div>
-                             <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Do you offer SEO services?</button></h2>
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes, basic SEO is included in all web development packages.</div></div>
+                        </div>
+
+                        <div class="accordion-item bg-card border border-secondary rounded mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-white" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                                    Do you work with WordPress or only custom code?
+                                </button>
+                            </h2>
+                            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    I specialize in custom code (React/Next.js + Node.js) for best performance and control. But I can also work with WordPress if needed.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-card border border-secondary rounded mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-white" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
+                                    What is your payment structure?
+                                </button>
+                            </h2>
+                            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    40% upfront • 40% after design approval • 20% on final delivery.<br>
+                                    Flexible for long-term projects.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-4 mt-auto">
-        <p class="mb-0">Copyright © <span id="live-time"></span> - Wasi Khan</p>
+    <footer class="py-3 text-center text-muted border-top border-secondary">
+        <p class="mb-0">© <span id="year"></span> Wasi Khan. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
